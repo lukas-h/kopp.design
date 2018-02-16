@@ -25,7 +25,8 @@ defaults:
     layout: page
 permalink: pretty
 primary_color: "#C04848"
-description: Hallo
+description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate Design.
+  Darunter Flyer, Visitenkarten, YouTube Channeldesign, Facebookdesign.
 logo: "/uploads/Website-Icon.png"
 isolang: de
 exclude:
