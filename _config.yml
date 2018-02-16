@@ -2,6 +2,9 @@
 title: Moritz Kopp Design
 timezone: Europe/Berlin
 collections:
+  posts:
+    title: Posts
+    output: true
   main:
     title: Startseite
     output: true
@@ -19,10 +22,10 @@ defaults:
     type: main
   values:
     layout: page
-    title:
+    title: 
     gallery:
-      - src:
-        description:
+    - src: 
+      description: 
 permalink: pretty
 primary_color: "#C04848"
 text_font: Molengo
