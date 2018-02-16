@@ -25,6 +25,8 @@ defaults:
     layout: page
 permalink: pretty
 primary_color: "#C04848"
+description: Hallo
+logo: 
 isolang: de
 exclude:
 - LICENSE
@@ -32,25 +34,9 @@ exclude:
 include:
 - ".firebaserc"
 - firebase.json
-replacements:
-- - "<img"
-  - "<amp-img"
-- - alt="" />
-  - ' layout="responsive" height="300px" width="600px"></amp-img>'
-- - "<video"
-  - "<amp-video"
-- - "</video"
-  - "</amp-video"
-- - <script src="https://gist.github.com/lukas-h/
-  - <amp-gist data-gistid="
-- - .js"></script>
-  - '" layout="fixed-height" height="250"></amp-gist>'
-- - id="amp"
-  - id="a-m-p"
 plugins:
 - jekyll-sass-converter
 sass:
   style: compressed
-description: Hallo
 url: https://kopp.design/
 baseurl: 
