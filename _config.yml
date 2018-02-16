@@ -2,10 +2,7 @@
 title: Moritz Kopp Design
 timezone: Europe/Berlin
 collections:
-  posts:
-    title: Posts
-    output: true
-  startseite:
+  main:
     title: Startseite
     output: true
   uploads:
@@ -14,21 +11,25 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: main
+  values:
+    layout: page
+    title:
+    gallery:
+      - src:
+        description:
 permalink: pretty
 primary_color: "#C04848"
+text_font: Molengo
+heading_font: Crete Round
 description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate Design.
   Darunter Flyer, Visitenkarten, YouTube Channeldesign, Facebookdesign.
 logo: "/uploads/Website-Icon.png"
-isolang: de
 exclude:
 - LICENSE
 - README.md
