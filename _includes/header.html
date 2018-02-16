@@ -1,0 +1,14 @@
+<header>
+    <nav>
+        <span>{{ site.title }}</span>
+        <ul>
+            {% for page in site.pages %}
+            {% if page.is_in_menu == true %}
+            <li>
+                <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

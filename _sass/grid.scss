@@ -1,0 +1,228 @@
+/*-------------------------------------------------------*\
+
+    Pintsize
+    Url: http://www.pintsize.io
+    Github: https://github.com/alistairtweedie/Pintsize/
+
+/*-------------------------------------------------------*/
+
+$columns: 12 !default;
+$column-width: 65px !default;
+$gutter-width: 20px !default;
+$fixed-gutter-size: true !default;
+$md: 40em;
+$lg: 64em;
+$old-ie: false !default;
+@function percentage($size, $width) {
+    @return $size / $width * 100%;
+}
+
+$grid-width: ($columns * $column-width)+(($columns) * $gutter-width);
+@function column($value) {
+    $width: $value * $column-width + ($value) * $gutter-width;
+    @return percentage($width, $grid-width);
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    & {
+        *zoom: 1;
+    }
+}
+
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin respond-to($point) {
+    @media (min-width: $point) {
+        @content;
+    }
+}
+
+@mixin old-ie {
+    @if $old-ie==true {
+        .old-ie & {
+            @content
+        }
+    }
+}
+
+@mixin gutter-output {
+    @if $fixed-gutter-size==true {
+        padding-left: $gutter-width / 2;
+        padding-right: $gutter-width / 2;
+    }
+    @else {
+        padding-left: percentage($gutter-width, $grid-width) / 2;
+        padding-right: percentage($gutter-width, $grid-width) / 2;
+    }
+}
+
+.container {
+    max-width: $grid-width;
+    margin: 0 auto;
+    @include box-sizing;
+    @include old-ie {
+        @include clearfix;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    @include old-ie {
+        @include clearfix;
+    }
+}
+
+.flex--auto {
+    .col {
+        flex-grow: 1;
+    }
+}
+
+.flex--start {
+    justify-content: flex-start;
+    .col {
+        flex-grow: 0;
+    }
+}
+
+.flex--center {
+    justify-content: center;
+    .col {
+        flex-grow: 0;
+    }
+    @include old-ie {
+        .flex--center {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.flex--end {
+    justify-content: flex-end;
+    .col {
+        flex-grow: 0;
+    }
+}
+
+.flex--top {
+    align-items: flex-start;
+}
+
+.flex--middle {
+    align-items: center;
+}
+
+.flex--baseline {
+    align-items: baseline;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--bottom {
+    align-items: flex-end;
+    .col {
+        flex-grow: 1;
+    }
+}
+
+.flex--around {
+    justify-content: space-around;
+    .col {
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+}
+
+.flex--between {
+    justify-content: space-between;
+    .col {
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+}
+
+.flex--reverse {
+    flex-direction: row-reverse;
+}
+
+.col {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    max-width: 100%;
+    @include box-sizing;
+    @include gutter-output;
+    @include old-ie {
+        float: left;
+        display: block;
+    }
+}
+
+.col--first {
+    order: -1;
+}
+
+.col--last {
+    order: 1;
+}
+
+@for $i from 1 through $columns {
+    .col--#{$i} {
+        flex-basis: column($i);
+        max-width: column($i);
+        @include old-ie {
+            width: column($i);
+        }
+    }
+}
+
+@for $i from 1 through $columns {
+    .col__offset--#{$i} {
+        margin-left: column($i);
+    }
+}
+
+@include respond-to($md) {
+    @for $i from 1 through $columns {
+        .col__md--#{$i} {
+            flex-basis: column($i);
+            max-width: column($i);
+            @include old-ie {
+                width: column($i);
+            }
+        }
+    }
+}
+
+@include respond-to($lg) {
+    @for $i from 1 through $columns {
+        .col__lg--#{$i} {
+            flex-basis: column($i);
+            max-width: column($i);
+            @include old-ie {
+                width: column($i);
+            }
+        }
+    }
+}
