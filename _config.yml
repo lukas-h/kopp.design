@@ -26,7 +26,7 @@ defaults:
 permalink: pretty
 primary_color: "#C04848"
 description: Hallo
-logo: 
+logo: "/uploads/Website-Icon.png"
 isolang: de
 exclude:
 - LICENSE
