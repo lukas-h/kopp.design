@@ -31,3 +31,22 @@ layout: default
 {% endif %}
 </div>
 {% endfor %}
+<div class="row">
+<div class="twelve columns">
+<h3>Impressum und Kontakt</h3>
+</div>
+<div class="six columns no-margin">
+<p>
+        {{ site.author }}<br>
+        {{ site.street }}<br>
+        {{ site.city }}<br>
+</p>
+</div>
+<div class="six columns">
+<p>   
+        <a href="mailto:{{ site.mail }}">{{ site.mail }}</a><br>
+        <a href="{{ site.facebook }}">Facebook</a><br>
+        {{ site.tel }}
+</p>
+</div>
+</div>

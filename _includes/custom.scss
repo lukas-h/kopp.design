@@ -352,12 +352,11 @@ label>.label-body {
     .column,
     .columns {
         margin-left: 4%;
-        padding:7px;
-        vertical-align: middle;        
+        padding:7px;     
     }
-    .column:first-child,
-    .columns:first-child {
-        margin-left: 0;
+    .column.no-margin,
+    .columns.no-margin {
+        margin-left: 0 !important;
     }
     .one.column,
     .one.columns {
@@ -469,7 +468,6 @@ label>.label-body {
     border-radius: none;
     padding: 14px;
     margin-bottom: 2rem;
-    display: flex;
     align-items: stretch;
 }
 .row:first-child{
