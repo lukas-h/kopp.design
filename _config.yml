@@ -34,11 +34,11 @@ description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate D
   Darunter Flyer, Visitenkarten, YouTube Channeldesign, Facebookdesign.
 logo: "/uploads/Website-Icon.png"
 links:
-- link: "print"
+- link: print
   title: Print
-- link: "social-media"
+- link: social-media
   title: Social-Media
-- link: "kontakt"
+- link: kontakt
   title: Kontakt
 exclude:
 - LICENSE
