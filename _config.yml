@@ -35,6 +35,15 @@ description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate D
 logo: "/uploads/Website-Icon.png"
 banner_image:
 links:
+<<<<<<< HEAD
+=======
+- link: print
+  title: Print
+- link: social-media
+  title: Social-Media
+- link: kontakt
+  title: Kontakt
+>>>>>>> f1cbb04fc546daea43cba4e4c172ab51a57d6ed3
 exclude:
 - LICENSE
 - README.md
