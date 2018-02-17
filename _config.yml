@@ -33,14 +33,14 @@ heading_font: Passion One
 description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate Design.
   Darunter Flyer, Visitenkarten, YouTube Channeldesign, Facebookdesign.
 logo: "/uploads/Website-Icon.png"
-banner_image:
+banner_image: 
 author: Moritz Kopp
 street: Unterer Fuchsgraben 29
 city: 97318 Kitzingen
 mail: moritz@kopp.design
 facebook: https://facebook.com
-tel: +1234567890
-links:
+tel: 1234567890
+links: 
 exclude:
 - LICENSE
 - README.md
