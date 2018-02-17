@@ -15,6 +15,7 @@ body {
     font-weight: 400;
     font-family: '{{ site.text_font }}', sans-serif;
     color: #222;
+    min-height: 90vh;
 }
 
 .container:after,
@@ -511,4 +512,10 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: black;
+}
+footer{
+    position: relative;
+    bottom:0;
+    width: 100%;
+    text-align: center;
 }
