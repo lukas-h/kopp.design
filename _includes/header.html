@@ -1,14 +1,10 @@
-<header>
-    <nav>
-        <span>{{ site.title }}</span>
-        <ul>
-            {% for page in site.pages %}
-            {% if page.is_in_menu == true %}
-            <li>
-                <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-            </li>
-            {% endif %}
-            {% endfor %}
-        </ul>
-    </nav>
-</header>
+<nav>
+    <span class="title">{{ site.title }}</span>
+    <ul class="links">
+{% for link in site.links %}
+        <li>
+            <a href="#{{ link.link }}">{{ link.title }}</a>
+        </li>
+{% endfor %}
+    </ul>
+</nav>

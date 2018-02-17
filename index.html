@@ -1,10 +1,11 @@
 ---
 title: Startseite
-layout: page
+layout: default
 ---
 
 {% assign count = 0 %}
-{% for m in site.main %}
+{% assign main = site.main | sort: 'position'}
+{% for m in main %}
 {% assign count = count | plus: 1 %}
 {% assign mod = count | modulo: 2 %}
 <div class="row">

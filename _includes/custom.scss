@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "normalize";
 $primary: {{ site.primary_color }};
+{% include hex_to_rgb.html %}
+{% assign hex2rgb_hex = settings.my_hex_color_var %}
+$primary-light: rgba({{ hex2rgb_r }}, {{ hex2rgb_g }}, {{ hex2rgb_b }}, 0.7);
 html {
     font-size: 62.5%;
 }
@@ -10,7 +13,7 @@ body {
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
-    font-family: sans-serif;
+    font-family: '{{ site.text_font }}', sans-serif;
     color: #222;
 }
 
@@ -44,10 +47,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.title {
     margin-top: 0;
     margin-bottom: 2rem;
     font-weight: 300;
+    font-family: '{{ site.heading_font }}', serif;
 }
 
 h1 {
@@ -112,11 +117,12 @@ p {
 }
 
 a {
-    color: #1EAEDB;
+    color: $primary;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #0FA0CE;
+    color: $primary-light;
 }
 
 ul {
@@ -186,8 +192,8 @@ input[type="button"] {
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid #bbb;
+    border-radius: none;
+    border: 4px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -213,8 +219,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: #33C3F0;
-    border-color: #33C3F0;
+    background-color: $primary;
+    border-color: $primary;
 }
 
 .button.button-primary:hover,
@@ -228,8 +234,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
     color: #FFF;
-    background-color: #1EAEDB;
-    border-color: #1EAEDB;
+    background-color: $primary-light;
+    border-color: $primary-light;
 }
 
 /* Forms
@@ -248,8 +254,8 @@ select {
     padding: 6px 10px;
     /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: #fff;
-    border: 1px solid #D1D1D1;
-    border-radius: 4px;
+    border: 4px solid #D1D1D1;
+    border-radius: none;
     box-shadow: none;
     box-sizing: border-box;
 }
@@ -284,7 +290,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid #33C3F0;
+    border: 4px solid #33C3F0;
     outline: 0;
 }
 
@@ -313,7 +319,7 @@ label>.label-body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -324,6 +330,7 @@ label>.label-body {
     width: 100%;
     float: left;
     box-sizing: border-box;
+    vertical-align: none;
 }
 
 /* For devices larger than 400px */
@@ -345,6 +352,7 @@ label>.label-body {
     .columns {
         margin-left: 4%;
         padding:7px;
+        vertical-align: middle;        
     }
     .column:first-child,
     .columns:first-child {
@@ -456,8 +464,51 @@ label>.label-body {
     }
 }
 .row {
-    box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.5);
+    border: 4px solid $primary;
+    border-radius: none;
     padding: 14px;
-    margin-bottom: 28px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: stretch;
 }
-  
+.row:first-child{
+    margin-top: 2rem;
+}
+nav{
+height: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    position: relative;
+    background: $primary;
+    color: white;
+}
+nav .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 40px;
+    padding-left: 30px;
+}
+nav ul.links {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+nav ul.links li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    float: right;
+    list-style: none;
+    text-align: -webkit-match-parent;
+    color: white;
+    padding-right: 30px;
+}
+nav ul li a {
+    color: white;
+}
+nav ul li a:hover {
+    color: black;
+}

@@ -24,15 +24,22 @@ defaults:
     layout: page
     title: 
     gallery:
-    - src: 
+    - image: 
       description: 
 permalink: pretty
 primary_color: "#C04848"
 text_font: Molengo
-heading_font: Crete Round
+heading_font: Passion One
 description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate Design.
   Darunter Flyer, Visitenkarten, YouTube Channeldesign, Facebookdesign.
 logo: "/uploads/Website-Icon.png"
+links:
+- link: "print"
+  title: Print
+- link: "social-media"
+  title: Social-Media
+- link: "kontakt"
+  title: Kontakt
 exclude:
 - LICENSE
 - README.md
