@@ -18,7 +18,7 @@ layout: default
         layout="responsive"
         type="slides">
 {% for image in m.gallery %}
-<div><amp-img layout="responsive" height="720" width="1280" src="{{ image.image }}"></amp-img>
+<div><amp-img layout="responsive" height="720" width="1280" src="{{ site.url }}{{ site.baseurl }}{{ image.image }}"></amp-img>
     <p>{{ image.description }}</p></div>
     {% endfor %}
         </amp-carousel>
@@ -41,7 +41,7 @@ layout: default
 <p>   
         <a href="mailto:{{ site.mail }}">{{ site.mail }}</a><br>
         <a href="{{ site.facebook }}">Facebook</a><br>
-        {{ site.tel }}
+        <a href="tel:{{ site.tel }}">{{ site.tel }}</a>
 </p>
 </div>
 </div>
