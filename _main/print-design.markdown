@@ -3,6 +3,7 @@ title: Print-Design
 date: 2018-02-16 16:41:00 +01:00
 gallery:
 - image: "/uploads/Album%20Cover%20Entwurf.png"
+  description: Gestaltung eines Album-Covers.
 icon: ion-ios-printer-outline
 id: print
 ---
