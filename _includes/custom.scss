@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "normalize";
 $primary: {{ site.primary_color }};
+$gold:  #E6BE8A;
 {% include hex_to_rgb.html %}
 {% assign hex2rgb_hex = settings.my_hex_color_var %}
 $primary-light: rgba({{ hex2rgb_r }}, {{ hex2rgb_g }}, {{ hex2rgb_b }}, 0.7);
@@ -55,6 +56,8 @@ h6,
     margin-bottom: 2rem;
     font-weight: bold;
     font-family: '{{ site.heading_font }}', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: silver
 }
 
 h1 {
@@ -195,7 +198,7 @@ input[type="button"] {
     white-space: nowrap;
     background-color: transparent;
     border-radius: none;
-    border: 4px solid #bbb;
+    border: 3px solid #bbb;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -256,7 +259,7 @@ select {
     padding: 6px 10px;
     /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: #fff;
-    border: 4px solid #D1D1D1;
+    border: 3px solid #D1D1D1;
     border-radius: none;
     box-shadow: none;
     box-sizing: border-box;
@@ -292,7 +295,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border: 4px solid #33C3F0;
+    border: 3px solid #33C3F0;
     outline: 0;
 }
 
@@ -321,7 +324,7 @@ label>.label-body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -352,7 +355,7 @@ label>.label-body {
     }
     .column,
     .columns {
-        margin-left: 4%;
+        margin-left: 2%;
         padding:7px;     
     }
     .column.no-margin,
@@ -467,16 +470,17 @@ label>.label-body {
 .row {
     border-radius: none;
     padding: 14px;
-    margin-bottom: 2rem;
+    margin-bottom: 5.6rem;
     align-items: stretch;
     background: #222;
     color: $primary;
+    border-bottom: 3px solid silver;
 }
 .row:first-child{
     margin-top: 2rem;
 }
 nav{
-height: 5rem;
+height: 5.6rem;
     top: 0;
     left: 0;
     right: 0;
@@ -484,12 +488,14 @@ height: 5rem;
     position: relative;
     background: #222;
     color: white;
+    margin-bottom: 5.6rem;
 }
 nav .title {
-    height: 5rem;
-    line-height: 5rem;
+    height: 5.6rem;
+    line-height: 5.6rem;
     font-size: 3.6rem;
     color: $primary;
+    text-decoration: none;
 }
 nav ul.links {
     list-style: none;
@@ -517,6 +523,8 @@ footer{
     position: relative;
     bottom:0;
     width: 100%;
+    height: 5.6rem;
+    line-height: 5.6rem;
     text-align: center;
 }
 .amp-carousel-button{
@@ -524,4 +532,10 @@ footer{
     border-radius: 0;
     height: 40px;
     width: 40px;
+}
+amp-carousel amp-img img{
+    object-fit: contain;
+}
+amp-carousel{
+    text-align: center;
 }

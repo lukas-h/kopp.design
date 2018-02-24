@@ -7,18 +7,19 @@ layout: default
 {% assign main = site.main | sort: 'position' %}
 {% for m in site.main %}
 <div class="row">
-<div class="twelve columns">
+<div class="five columns">
 <h2>{{ m.title }}</h2>
-{{ m.content | truncatewords: 105 | markdownify }}
+{{ m.content | markdownify }}
 </div>
 
 {% if m.gallery[0].image %}
-<div class="twelve columns">
-        <amp-carousel height="720" width="1280"
+<div class="seven columns">
+        <amp-carousel height="840" width="1280"
         layout="responsive"
         type="slides">
 {% for image in m.gallery %}
-    <amp-img layout="responsive" height="720" width="1280" src="{{ image.image }}"></amp-img>
+<div><amp-img layout="responsive" height="720" width="1280" src="{{ image.image }}"></amp-img>
+    <p>{{ image.description }}</p></div>
     {% endfor %}
         </amp-carousel>
 </div>
