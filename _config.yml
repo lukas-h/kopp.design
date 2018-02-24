@@ -27,7 +27,7 @@ defaults:
     - image: 
       description: 
 permalink: pretty
-primary_color: "#d20000"
+primary_color: "#f7faff"
 text_font: Molengo
 heading_font: Roboto Condensed
 description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate Design.

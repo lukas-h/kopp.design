@@ -14,7 +14,8 @@ body {
     line-height: 1.6;
     font-weight: 400;
     font-family: '{{ site.text_font }}', sans-serif;
-    color: #222;
+    background: #222;
+    color: $primary;
     min-height: 90vh;
 }
 
@@ -52,19 +53,18 @@ h6,
 .title {
     margin-top: 0;
     margin-bottom: 2rem;
-    font-weight: 300;
+    font-weight: bold;
     font-family: '{{ site.heading_font }}', sans-serif;
-    text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 
 h1 {
-    font-size: 4.0rem;
+    font-size: 3.2rem;
     line-height: 1.2;
     letter-spacing: -.1rem;
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 3.0rem;
     line-height: 1.25;
     letter-spacing: -.1rem;
 }
@@ -95,10 +95,10 @@ h6 {
 
 @media (min-width: 550px) {
     h1 {
-        font-size: 5.0rem;
+        font-size: 3.6rem;
     }
     h2 {
-        font-size: 4.2rem;
+        font-size: 3.6rem;
     }
     h3 {
         font-size: 3.6rem;
@@ -490,8 +490,9 @@ height: 40px;
 nav .title {
     height: 40px;
     line-height: 40px;
-    font-size: 40px;
-    padding-left: 30px;
+    font-size: 3rem;
+    padding-left: 14px;
+    color: #222;
 }
 nav ul.links {
     list-style: none;
