@@ -6,27 +6,21 @@ layout: default
 {% assign count = 0 %}
 {% assign main = site.main | sort: 'position' %}
 {% for m in site.main %}
-{% assign count = count | plus: 1 %}
-{% assign mod = count | modulo: 2 %}
 <div class="row">
-{% if m.gallery[0].src %}
-<div class="twelve columns">
-        <amp-carousel height="720" width="1280"
-        layout="responsive"
-        type="slides">
-    <amp-img layout="responsive" height="720" width="1280" src="{{ m.gallery[0].src }}"></amp-img>
-    <amp-img layout="responsive" height="720" width="1280" src="{{ m.gallery[0].src }}"></amp-img>
-    <amp-img layout="responsive" height="720" width="1280" src="{{ m.gallery[0].src }}"></amp-img>
-        </amp-carousel>
-</div>
 <div class="twelve columns">
 <h2>{{ m.title }}</h2>
 {{ m.content | truncatewords: 105 | markdownify }}
 </div>
-{% else %}
+
+{% if m.gallery[0].image %}
 <div class="twelve columns">
-<h2><i class="icon {{m.icon}}"></i> {{ m.title }}</h2>
-{{ m.content | markdownify }}
+        <amp-carousel height="720" width="1280"
+        layout="responsive"
+        type="slides">
+{% for image in m.gallery %}
+    <amp-img layout="responsive" height="720" width="1280" src="{{ image.image }}"></amp-img>
+    {% endfor %}
+        </amp-carousel>
 </div>
 {% endif %}
 </div>
