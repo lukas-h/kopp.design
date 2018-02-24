@@ -1,6 +1,13 @@
 ---
 title: Social-Media-Design
 date: 2018-02-16 16:19:00 +01:00
+gallery:
+- image: "/uploads/Tim%20WP.png"
+  description: 
+- image: "/uploads/sebbi.png"
+  description: 
+- image: "/uploads/Logo.png"
+  description: 
 icon: ion-android-share-alt
 id: social-media
 ---
