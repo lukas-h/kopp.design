@@ -3,11 +3,11 @@ title: Social-Media-Design
 date: 2018-02-16 16:19:00 +01:00
 gallery:
 - image: "/uploads/Tim%20WP.png"
-  description: 
+  description: Desktop-Wallpaper
 - image: "/uploads/sebbi.png"
-  description: 
+  description: Komposition aus Urlaubsbildern
 - image: "/uploads/Logo.png"
-  description: 
+  description: Logo
 icon: ion-android-share-alt
 id: social-media
 ---
