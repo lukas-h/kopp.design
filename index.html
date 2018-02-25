@@ -6,42 +6,63 @@ layout: default
 {% assign count = 0 %}
 {% assign main = site.main | sort: 'position' %}
 {% for m in site.main %}
+{% assign count = count | plus: 1 %}
+{% assign mod = count | modulo: 2 %}
 <div class="row">
-<div class="five columns">
-<h2>{{ m.title }}</h2>
-{{ m.content | markdownify }}
-</div>
-
-{% if m.gallery[0].image %}
-<div class="seven columns">
-        <amp-carousel height="840" width="1280"
-        layout="responsive"
-        type="slides">
-{% for image in m.gallery %}
-<div><amp-img layout="responsive" height="720" width="1280" src="{{ site.url }}{{ site.baseurl }}{{ image.image }}"></amp-img>
-    <p>{{ image.description }}</p></div>
-    {% endfor %}
-        </amp-carousel>
+{% if mod == 0 %}
+<h2 class="bg-title-right">{{ m.title }}</h2>
+<div class="six columns left-part">
+{% include gallery.html %}
 </div>
 {% endif %}
+<div class="six columns text-part {% if mod == 0 %}right-align{% endif %}">
+{{ m.content | markdownify }}
+</div>
+{% if mod != 0 %}
+<h2 class="bg-title-left">{{ m.title }}</h2>
+<div class="six columns right-part">
+{% include gallery.html %}
+</div>
+{% endif %}
+<div class="twelve columns mobile-text">
+<h2 class="mobile-title">{{ m.title }}</h2>
+{{ m.content | markdownify }}
+</div>
+<div class="twelve columns mobile-gallery">
+{% include gallery.html %}
+</div>
 </div>
 {% endfor %}
 <div class="row">
 <div class="twelve columns">
-<h3>Impressum und Kontakt</h3>
+<h3 class="bg-title-left">Impressum und Kontakt</h3>
 </div>
-<div class="six columns no-margin">
+<div class="six columns text-part no-margin">
 <p>
         {{ site.author }}<br>
         {{ site.street }}<br>
         {{ site.city }}<br>
 </p>
 </div>
-<div class="six columns">
+<div class="six columns text-part">
 <p>   
         <a href="mailto:{{ site.mail }}">{{ site.mail }}</a><br>
         <a href="{{ site.facebook }}">Facebook</a><br>
         <a href="tel:{{ site.tel }}">{{ site.tel }}</a>
 </p>
+</div>
+<div class="twelve columns mobile-text">
+<h3 class="mobile-title">Kontakt und Impressum</h3>
+        
+                <p>
+                                {{ site.author }}<br>
+                                {{ site.street }}<br>
+                                {{ site.city }}<br>
+                        </p>
+                        <p>   
+                                        <a href="mailto:{{ site.mail }}">{{ site.mail }}</a><br>
+                                        <a href="{{ site.facebook }}">Facebook</a><br>
+                                        <a href="tel:{{ site.tel }}">{{ site.tel }}</a>
+                                </p>
 </div>
 </div>

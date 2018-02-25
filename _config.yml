@@ -27,8 +27,7 @@ defaults:
     - image: 
       description: 
 permalink: pretty
-primary_color: "#f7faff"
-text_font: Molengo
+text_font: Noto Sans
 heading_font: Roboto Condensed
 description: Moritz Kopp Grafikdesign. Social-Media-und Printdesign, Corporate Design.
   Darunter Flyer, Visitenkarten, YouTube Channeldesign, Facebookdesign.
