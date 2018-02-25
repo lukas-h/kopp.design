@@ -29,16 +29,7 @@ layout: default
 {{ m.content | markdownify }}
 </div>
 <div class="twelve columns mobile-gallery">
-                {% if m.gallery[0].image %}
-                <amp-carousel height="1000" width="1280"
-                layout="responsive"
-                type="slides">
-        {% for image in m.gallery %}
-        <div><amp-img layout="responsive" height="900" width="1280" src="{{ site.url }}{{ site.baseurl }}{{ image.image }}"></amp-img>
-            <p>{{ image.description }}</p></div>
-            {% endfor %}
-                </amp-carousel>
-        {% endif %}
+{% include gallery.html %}
 </div>
 </div>
 {% endfor %}
