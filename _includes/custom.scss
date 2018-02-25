@@ -359,7 +359,7 @@ label>.label-body {
     }
     .column.no-margin,
     .columns.no-margin {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
     .one.column,
     .one.columns {
@@ -612,7 +612,7 @@ amp-carousel{
     .row .right-align{
         text-align: right;
     }
-    .row .six.columns.text-part{
+    .row .columns.text-part{
         min-height: 580px;
         display: flex;
         -webkit-box-align: center;
@@ -620,7 +620,7 @@ amp-carousel{
         top:0;
         bottom: 0;
     }
-    .row .six.columns.right-part{
+    .row .columns.right-part{
         position: relative;
         right: -40px;
         bottom: -40px;
@@ -629,7 +629,7 @@ amp-carousel{
         padding:0;
         margin-right: 0;
     }
-    .row .six.columns.left-part{
+    .row .columns.left-part{
         position: relative;
         left: -40px;
         bottom: -40px;

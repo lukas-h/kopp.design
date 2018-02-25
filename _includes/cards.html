@@ -1,0 +1,30 @@
+{% assign count = 0 %}
+{% assign main = site.main | sort: 'position' %}
+{% for m in site.main %}
+{% assign count = count | plus: 1 %}
+{% assign mod = count | modulo: 2 %}
+<div class="row">
+{% if mod == 0 %}
+<h2 class="bg-title-right">{{ m.title }}</h2>
+<div class="six columns left-part">
+{% include gallery.html %}
+</div>
+{% endif %}
+<div class="six columns text-part {% if mod == 0 %}right-align{% endif %}">
+{{ m.content | markdownify }}
+</div>
+{% if mod != 0 %}
+<h2 class="bg-title-left">{{ m.title }}</h2>
+<div class="six columns right-part">
+{% include gallery.html %}
+</div>
+{% endif %}
+<div class="twelve columns mobile-text">
+<h2 class="mobile-title">{{ m.title }}</h2>
+{{ m.content | markdownify }}
+</div>
+<div class="twelve columns mobile-gallery">
+{% include gallery.html %}
+</div>
+</div>
+{% endfor %}

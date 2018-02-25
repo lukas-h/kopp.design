@@ -1,0 +1,13 @@
+<div class="row">
+        <div class="twelve columns">
+        <h3 class="bg-title-left">{{ site.author }} - Über mich</h3>
+        </div>
+        <div class="twelve columns text-part no-margin">
+            {{ site.about_text | markdownify }}
+            <br>
+        </div>
+        <div class="twelve columns mobile-text">
+        <h3 class="mobile-title">{{ site.author }} - Über mich</h3>
+            {{ site.about_text | markdownify }}
+        </div>
+</div>
