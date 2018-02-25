@@ -39,7 +39,10 @@ city: 97318 Kitzingen
 mail: moritz@kopp.design
 facebook: https://www.facebook.com/Moritz-Kopp-Grafikdesign-1814843928565755/
 tel: "+4915206475003"
-about_text: Hier muss der Text rein!!
+about_text: |-
+  Moritz Kopp Grafikdesign ist ein Unternehmen, welches allergrößten Wert auf die individuellen Vorstellungen der Kunden legt. Mit diesem Grundgedanken vor Augen steht selbstverständlich auch die Zufriedenheit meiner Kundschaft in jedem einzelnen Projekt immer im Vordergrund.
+
+  Im Februar 2018 gegründet, ist mir wohl bewusst, dass es sich um ein unglaublich junges Unternehmen handelt. Dennoch bin ich absolut sicher, dass Sie niemals enttäuscht werden, wenn Sie ihr Projekt zusammen mit mir verwirklichen. Ich freue mich bereits jetzt, mit Ihnen zu arbeiten und bin voller Zuversicht, dass wir gemeinsam Ihre angestrebten Ziele erreichen.
 links: 
 exclude:
 - LICENSE
