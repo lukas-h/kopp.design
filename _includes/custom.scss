@@ -492,14 +492,14 @@ height: 5.6rem;
 nav .title {
     height: 5.6rem;
     line-height: 5.6rem;
-    font-size: 3.6rem;
+    font-size: 3.7rem;
     color: $primary;
     opacity: 0.6;
     text-decoration: none;
 }
 nav .title:before{
     content: '>';
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
 }
 nav ul.links {
     list-style: none;
@@ -642,6 +642,18 @@ amp-carousel{
         margin:0;
         background-color: #e2e2e2;
         color: $dark;
+    }
+}
+@media (min-width: 1500px){
+    .row .bg-title-right,
+    .row .bg-title-left{
+        font-size: 7.4rem;
+    }
+    .bg-title-right:after{
+        margin-left: 1.7rem;
+    }
+    .bg-title-left:before{
+        margin-right: 1.7rem;
     }
 }
 .clip-path-right{
