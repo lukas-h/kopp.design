@@ -12,7 +12,7 @@ gallery:
   description: Portrait
 - image: "/uploads/Referenz%20Treshold%20Effect.png"
   description: Foto mit Treshold Effekt
-- image: "/uploads/Referenz%20?.psd"
+- image: "/uploads/Referenz%20_.png"
   description: Wallpaper
 icon: ion-android-share-alt
 id: social-media
