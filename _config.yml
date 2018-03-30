@@ -5,6 +5,7 @@ collections:
   reviews:
     title: Bewertungen
     output: true
+    name: Max Mustermann
   posts:
     title: Posts
     output: true
