@@ -2,7 +2,7 @@
 title: Moritz Kopp Design
 timezone: Europe/Berlin
 collections:
-  bewertungen:
+  reviews:
     title: Bewertungen
     output: true
   posts:
