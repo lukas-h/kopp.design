@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="twelve columns">
+    <h3 class="bg-title-left">Bewertungen</h3>
+    </div>
+    <div class="twelve columns text-part no-margin">
+        <amp-carousel height="320"
+  layout="fixed-height"
+  type="carousel" class="review-carousel" controls>
+  {% for review in site.reviews %}
+  <div class="review">
+      <h3>> {{ review.title }}</h3>
+      <p>{{ review.content | truncate: 200 }}</p>
+      <p><em>~ {{ review.name }}</em></p>
+  </div>
+  {% endfor %}
+</amp-carousel>
+    </div>
+    <div class="twelve columns mobile-text">
+    <h3 class="mobile-title">Bewertungen</h3>
+    <amp-carousel height="350"
+    layout="fixed-height"
+    type="slides" class="review-carousel" controls>
+    {% for review in site.reviews %}
+    <div class="review">
+        <h3>> {{ review.title }}</h3>
+        <p>{{ review.content | truncate: 200 }}</p>
+        <p><em>~ {{ review.name }}</em></p>
+    </div>
+    {% endfor %}
+  </amp-carousel>
+    </div>
+</div>

@@ -4,8 +4,7 @@ timezone: Europe/Berlin
 collections:
   reviews:
     title: Bewertungen
-    output: true
-    name: Max Mustermann
+    output: false
   posts:
     title: Posts
     output: true
@@ -21,6 +20,11 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: ''
+    type: reviews
+  values:
+    name: Max Mustermann
 - scope:
     path: ''
     type: main

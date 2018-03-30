@@ -1,7 +1,8 @@
 {% if m.gallery[0].image %}
         <amp-carousel height="1" width="1"
         layout="responsive"
-        type="slides">
+        type="slides"
+        controls>
 {% for image in m.gallery %}
 <div><amp-img layout="responsive" height="1000" width="1280" src="{{ site.url }}{{ site.baseurl }}{{ image.image }}"></amp-img>
     <p>{{ image.description }}</p></div>
