@@ -1,7 +1,9 @@
 ---
 title: Bewertung 2
 date: 2018-03-30 19:07:00 +02:00
-name: Bewertende Person
+name: Sebastian Srour
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+Sehr nett und freundlich. Er hilft und wenn nach der Fertigstellung noch Fehler sind, behebt er sie auch noch. Er ist freundlich und nett und ich würde ihn jedem empfehlen, der grade neue Grafikdesigns braucht. Er macht das Top!
+
+5 von 5 Sternen hat das Verdient !!
