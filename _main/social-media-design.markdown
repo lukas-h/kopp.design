@@ -8,11 +8,11 @@ gallery:
   description: Logo
 - image: "/uploads/Logo%20MewSick-f13dfb.png"
   description: Musiker-Logo
-- image: "/uploads/Referenz%20Portrait%20Ink%20Smudge%20Effect.png"
+- image: "/uploads/Referenz%20Portrait%20Ink%20Smudge%20Effect.jpg"
   description: Portrait
-- image: "/uploads/Referenz%20Treshold%20Effect.png"
+- image: "/uploads/Referenz%20Treshold%20Effect.jpg"
   description: Foto mit Treshold Effekt
-- image: "/uploads/Referenz%20_.png"
+- image: "/uploads/Referenz%20Sherlock.jpg"
   description: Wallpaper
 icon: ion-android-share-alt
 id: social-media
