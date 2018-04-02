@@ -4,4 +4,4 @@ date: 2018-03-30 19:07:00 +02:00
 name: Dustin Günther
 ---
 
-Kurz und Knapp zusammengefasst, Top Leistung, schnell, professionelle Arbeit, Wünsche werden berücksichtigt.
+Kurz und knapp zusammengefasst, top Leistung, schnell, professionelle Arbeit, Wünsche werden berücksichtigt.
