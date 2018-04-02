@@ -6,7 +6,7 @@ gallery:
   description: Komposition aus Urlaubsbildern
 - image: "/uploads/Logo.png"
   description: Logo
-- image: "/uploads/Logo%20MewSick-f13dfb.png"
+- image: "/uploads/Logo%20MewSick.jpg"
   description: Musiker-Logo
 - image: "/uploads/Referenz%20Portrait%20Ink%20Smudge%20Effect-6e6754.jpg"
   description: Portrait
