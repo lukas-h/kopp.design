@@ -14,6 +14,8 @@ gallery:
   description: Foto mit Treshold Effekt
 - image: "/uploads/Referenz%20Sherlock.jpg"
   description: Wallpaper
+- image: "/uploads/Logo%20Soccer%20Gaming.png"
+  description: YouTuber-Logo
 icon: ion-android-share-alt
 id: social-media
 ---
