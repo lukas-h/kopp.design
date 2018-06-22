@@ -12,7 +12,7 @@ gallery:
   description: Portrait
 - image: "/uploads/Referenz%20Treshold%20Effect-aafc78.jpg"
   description: Foto mit Treshold Effekt
-- image: "/uploads/Logo%20Soccer%20Gaming.png"
+- image: "/uploads/Logo%20Soccer%20Gaming.jpg"
   description: YouTuber-Logo
 icon: ion-android-share-alt
 id: social-media
