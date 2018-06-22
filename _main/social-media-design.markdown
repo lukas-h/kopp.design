@@ -10,7 +10,7 @@ gallery:
   description: Musiker-Logo
 - image: "/uploads/Referenz%20Portrait%20Ink%20Smudge%20Effect-641739.png"
   description: Portrait
-- image: "/uploads/Referenz%20Treshold%20Effect.jpg"
+- image: "/uploads/Referenz%20Treshold%20Effect-aafc78.jpg"
   description: Foto mit Treshold Effekt
 - image: "/uploads/Logo%20Soccer%20Gaming.png"
   description: YouTuber-Logo
