@@ -12,7 +12,7 @@ gallery:
   description: Portrait mit Ink-Smudge Effekt
 - image: "/uploads/Referenz%20Treshold%20Effect-cb0f16.jpg"
   description: Foto mit Treshold-Effekt
-- image: "/uploads/Logo%20Soccer%20Gaming.jpg"
+- image: "/uploads/Logo%20Soccer%20Gaming-ce59de.jpg"
   description: YouTuber-Logo
 - image: "/uploads/Hirsch.jpg"
   description: Blur-Effect
