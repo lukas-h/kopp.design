@@ -11,7 +11,7 @@ gallery:
 - image: "/uploads/Referenz%20Portrait%20Ink%20Smudge%20Effect-5a6a73.jpg"
   description: Portrait mit Ink-Smudge Effekt
 - image: "/uploads/Referenz%20Treshold%20Effect-cb0f16.jpg"
-  description: Foto mit Treshold Effekt
+  description: Foto mit Treshold-Effekt
 - image: "/uploads/Logo%20Soccer%20Gaming.jpg"
   description: YouTuber-Logo
 icon: ion-android-share-alt
