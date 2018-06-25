@@ -14,6 +14,8 @@ gallery:
   description: Foto mit Treshold-Effekt
 - image: "/uploads/Logo%20Soccer%20Gaming.jpg"
   description: YouTuber-Logo
+- image: "/uploads/Hirsch.jpg"
+  description: Blur-Effect
 icon: ion-android-share-alt
 id: social-media
 ---
