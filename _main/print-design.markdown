@@ -12,6 +12,8 @@ gallery:
   description: Visitenkarte#2 Front
 - image: "/uploads/Visitenkarten%20Pour%20MOI%20R%C3%BCckseite-3ca395.png"
   description: Visitenkarte#2 Rückseite
+- image: "/uploads/Albumcover.png"
+  description: Albumcover
 icon: ion-ios-printer-outline
 id: print
 ---
