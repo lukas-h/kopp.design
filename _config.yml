@@ -63,5 +63,5 @@ plugins:
 - jekyll-sass-converter
 sass:
   style: compressed
-url: https://kopp.design/
-baseurl: 
+url: https://kopp.design
+baseurl:
