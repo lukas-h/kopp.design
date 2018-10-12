@@ -6,8 +6,6 @@ gallery:
   description: Komposition aus Urlaubsbildern
 - image: "/uploads/Logo.png"
   description: Logo
-- image: "/uploads/Logo%20MewSick.png"
-  description: Musiker-Logo
 - image: "/uploads/Referenz%20Portrait%20Ink%20Smudge%20Effect-e6afdc.png"
   description: Portrait mit Ink-Smudge Effekt
 - image: "/uploads/Referenz%20Treshold%20Effect-cb0f16.jpg"
